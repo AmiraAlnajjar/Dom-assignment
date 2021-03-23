@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p>
+    <a id="wcc" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://github.com/gazaskygeeks/women-crash-course">WCC</a>
+    </p>
+    <button onclick="getAttributes()">
+      Click here to get attributes value
+    </button>
+    <script>
+        function getAttributes()
+                {
+                var WccHref = document.getElementById("wcc").href;
+                alert('The value of the href attribute of the link is : '+WccHref);
+                var WccHreflang= document.getElementById("wcc").hreflang;   
+                alert('The value of the hreflang attribute of the link is : '+WccHreflang);
+                var WccRel = document.getElementById("wcc").rel; 
+                alert('The value of the rel attribute of the link is : '+WccRel);
+                var WccTarget = document.getElementById("wcc").target; 
+                alert('The value of the taget attribute of the link is : '+WccTarget);
+                var WccType = document.getElementById("wcc").type; 
+                alert('The value of the type attribute of the link is : '+WccType);  
+                }
+    </script>
+  </body>
+</html>
